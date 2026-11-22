@@ -30,7 +30,11 @@ The old template files (`css/styles.css`, `css/vendor.css`, `js/main.js`, `js/pl
 - **Add a project:** copy one `<li class="work-card">` block in `index.html`, then add a 16:10 screenshot to `images/work/`.
 - **Add Unity builds, gameplay videos or Blender renders:** add entries to `GAME_SHOWCASE` at the top of `js/app.js`. The "Builds & renders" gallery shows up automatically once the list isn't empty.
 - **Contact form delivery:** create a free form at [formspree.io](https://formspree.io) and paste its endpoint into `data-endpoint="…"` on the `<form>` in `index.html`. While `data-endpoint` is empty, the form validates the input and then opens the visitor's email app with the message already filled in, addressed to `devrayyan1@gmail.com`.
-- **Social preview / SEO:** once the site is deployed, replace `https://yourdomain.com` in the `<head>` meta tags and the JSON-LD with your real portfolio domain.
+- **Social preview / SEO:** the `<head>` meta tags and JSON-LD point to `https://ceorayyan.netlify.app/`. Change them if the domain changes.
+- **The Great Cheese Escape APK:** the file is `downloads/the-great-cheese-escape.apk` (44 MB) and the Download APK button links to it, so it goes live with the site. `_headers` makes Netlify serve it as an Android package. If your host refuses large files, upload the APK to a GitHub Release instead and change the button's `href` in `index.html`.
+- **Game screenshots / gameplay video:** add them to `GAME_SHOWCASE` at the top of `js/app.js`.
+- **CV:** `cv.pdf` is generated from `cv/cv.html`. Edit the HTML, then print it to PDF in Edge or Chrome (A4, no headers/footers, background graphics on).
+- **Favicon:** the "R" icon set is `favicon.svg`, `favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png`, `apple-touch-icon.png` and `android-chrome-*.png`. The `?v=3` in the links forces browsers to load the new icon.
 
 ## Performance and accessibility
 

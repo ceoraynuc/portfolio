@@ -38,6 +38,7 @@ function webglAvailable() {
     } catch (e) { return false; }
 }
 const WEBGL = webglAvailable();
+if (!WEBGL) html.classList.add('no-webgl');
 
 /* ---------------- Smooth scroll (Lenis) ---------------- */
 let lenis = null;
@@ -466,12 +467,13 @@ async function setupHero() {
         const mod = await import('./hero-scene.js');
         hero = mod.initHero({
             canvas: $('.hero__canvas'),
-            section: $('.hero'),
+            container: $('.hero__stage'),
             reducedMotion: prefersReduced,
             lite,
             onReady: () => html.classList.add('webgl-ready'),
         });
         // If the preloader already finished (slow network), start the intro now.
+        if (!hero) html.classList.add('no-webgl');
         if (hero && html.classList.contains('is-loaded')) hero.playIntro();
     } catch (err) {
         console.warn('Hero 3D scene unavailable, using fallback.', err);

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Rayyan Ahmed — Full-Stack Developer, Game Developer &amp; 3D Creator</title>
+    <title>Rayyan Ahmed — Full-Stack Developer, Game Developer &amp; Mobile App Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#060608">
     <meta name="color-scheme" content="dark">
@@ -16,26 +16,27 @@
     <meta name="author" content="Rayyan Ahmed">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph Meta (for LinkedIn, Facebook)
-         NOTE: replace https://yourdomain.com with your real portfolio domain once deployed. -->
+    <!-- Open Graph Meta (for LinkedIn, Facebook) -->
     <meta property="og:title" content="Rayyan Ahmed - Full Stack Developer">
     <meta property="og:description"
         content="Founder of Raynuc. Developer skilled in PHP, Laravel, MySQL, JavaScript, Tailwind CSS, jQuery — plus Unity 3D game development and Blender 3D.">
-    <meta property="og:image" content="https://yourdomain.com/images/about-photo.jpg">
-    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:image" content="https://ceorayyan.netlify.app/images/about-photo.jpg">
+    <meta property="og:url" content="https://ceorayyan.netlify.app/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Rayyan Ahmed - Full Stack Developer">
     <meta name="twitter:description" content="Full Stack Developer (PHP, Laravel, JavaScript). Founder of Raynuc.">
-    <meta name="twitter:image" content="https://yourdomain.com/images/about-photo.jpg">
+    <meta name="twitter:image" content="https://ceorayyan.netlify.app/images/about-photo.jpg">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="favicon.ico?v=3" sizes="48x48">
+    <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=3">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=3">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3">
+    <link rel="manifest" href="site.webmanifest?v=3">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,13 +69,13 @@
   "@context": "https://schema.org/",
   "@type": "Person",
   "name": "Rayyan Ahmed",
-  "url": "https://yourdomain.com/",
-  "image": "https://yourdomain.com/images/about-photo.jpg",
+  "url": "https://ceorayyan.netlify.app/",
+  "image": "https://ceorayyan.netlify.app/images/about-photo.jpg",
   "sameAs": [
     "https://github.com/ceoraynuc",
     "https://www.linkedin.com/in/ceoraynuc/",
     "https://www.instagram.com/developer.rayyan",
-    "https://www.threads.net/@itx__rayyan_ahmed"
+    "https://www.threads.com/@itx__rayyan_ahmed"
   ],
   "jobTitle": "Full Stack Developer",
   "worksFor": {
@@ -204,7 +205,7 @@
                 <a href="https://github.com/ceoraynuc" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg><use href="#i-github" /></svg></a>
                 <a href="https://www.linkedin.com/in/ceoraynuc/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg><use href="#i-linkedin" /></svg></a>
                 <a href="https://www.instagram.com/developer.rayyan" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg><use href="#i-instagram" /></svg></a>
-                <a href="https://www.threads.net/@itx__rayyan_ahmed" target="_blank" rel="noopener noreferrer" aria-label="Threads"><svg><use href="#i-threads" /></svg></a>
+                <a href="https://www.threads.com/@itx__rayyan_ahmed" target="_blank" rel="noopener noreferrer" aria-label="Threads"><svg><use href="#i-threads" /></svg></a>
             </div>
         </div>
     </div>
@@ -213,19 +214,10 @@
 
         <!-- ============================ HERO ============================ -->
         <section id="home" class="hero section-target" aria-label="Introduction">
-            <div class="hero__stage" aria-hidden="true">
-                <canvas class="hero__canvas"></canvas>
-                <div class="hero__fallback">
-                    <div class="orb orb--a"></div>
-                    <div class="orb orb--b"></div>
-                    <div class="orb orb--c"></div>
-                </div>
-                <div class="hero__vignette"></div>
-            </div>
-
-            <div class="hero__content container">
+            <div class="container hero__grid">
+            <div class="hero__content">
                 <p class="eyebrow hero__eyebrow" data-hero-in>
-                    <span class="eyebrow__dot"></span> Hello World &mdash; Founder &amp; CEO at Raynuc
+                    Hello World &mdash; Founder &amp; CEO at Raynuc
                 </p>
 
                 <h1 class="hero__title" aria-label="Rayyan Ahmed">
@@ -236,13 +228,13 @@
                 <p class="hero__roles" data-hero-in>
                     <span>Full-Stack Developer</span><i aria-hidden="true"></i>
                     <span>Game Developer</span><i aria-hidden="true"></i>
-                    <span>3D Creator</span>
+                    <span>Mobile App Developer</span>
                 </p>
 
                 <p class="hero__lead" data-hero-in>
-                    I build for the web, craft games in <strong>Unity&nbsp;3D</strong> and shape worlds in
-                    <strong>Blender</strong>. I am Rayyan, a full stack developer skilled in PHP, MySQL,
-                    Tailwind CSS, jQuery &mdash; and the founder of Raynuc.
+                    I build for the web, make Android games in <strong>Unity&nbsp;3D</strong> and create
+                    3D assets in <strong>Blender</strong>. I am Rayyan, a full stack developer skilled in PHP,
+                    Laravel, MySQL and Next.js &mdash; and the founder of Raynuc.
                 </p>
 
                 <div class="hero__actions" data-hero-in>
@@ -262,12 +254,17 @@
                 </ul>
             </div>
 
+            <div class="hero__stage" aria-hidden="true">
+                <canvas class="hero__canvas"></canvas>
+            </div>
+            </div>
+
             <div class="hero__foot container" data-hero-in>
                 <a href="#about" class="scroll-cue" aria-label="Scroll to About">
                     <span class="scroll-cue__track"><span></span></span>
                     <span>Scroll to explore</span>
                 </a>
-                <p class="hero__hint">Move your cursor &mdash; the workstation follows.</p>
+                <p class="hero__hint">Drag the laptop to rotate it</p>
             </div>
         </section>
 
@@ -276,7 +273,7 @@
             <div class="marquee__track">
                 <span>Laravel</span><i>✦</i><span>Unity 3D</span><i>✦</i><span>Blender</span><i>✦</i>
                 <span>Next.js</span><i>✦</i><span>C#</span><i>✦</i><span>PHP</span><i>✦</i>
-                <span>React.js</span><i>✦</i><span>MySQL</span><i>✦</i><span>Three.js</span><i>✦</i>
+                <span>React.js</span><i>✦</i><span>MySQL</span><i>✦</i><span>Flutter</span><i>✦</i>
                 <span>Tailwind CSS</span><i>✦</i><span>Gameplay Systems</span><i>✦</i><span>3D Modeling</span><i>✦</i>
             </div>
         </div>
@@ -288,9 +285,6 @@
                     <figure class="portrait" data-tilt>
                         <img src="images/work/rayyan.jpg" alt="Rayyan Ahmed" width="1100" height="1309"
                             loading="lazy" decoding="async">
-                        <figcaption class="portrait__tag">
-                            <span class="eyebrow__dot"></span> Founder @ Raynuc &middot; BS Software Engineering @ FAST-NUCES
-                        </figcaption>
                     </figure>
                 </div>
 
@@ -305,12 +299,11 @@
                         house with 40+ team members from Nigeria.
                         I specialize in PHP, Laravel, MySQL, JavaScript, HTML, CSS, and Tailwind. From September
                         2024 to January 2025, I ran Matjar, an e-brand
-                        for fashion including shirts, pants, and watches. I also worked remotely and part-time
-                        with Ajmanistan, a UAE-based platform.
+                        for fashion including shirts, pants, and watches.
                     </p>
                     <p class="about__text about__text--muted" data-reveal>
-                        Beyond the browser, I build games with Unity&nbsp;3D and C#, and model, texture and light 3D
-                        assets in Blender. My goal is simple: ship products that feel as good as they work &mdash;
+                        Beyond the browser, I build 3D Android games with Unity&nbsp;3D and C#, build mobile apps with
+                        Flutter, and model, texture and light 3D assets in Blender. My goal is simple: ship products that feel as good as they work &mdash;
                         whether that's a Laravel platform, an AI chatbot or an interactive 3D world.
                     </p>
 
@@ -320,8 +313,8 @@
                             <dd><span data-count="40">40</span>+</dd>
                         </div>
                         <div class="stat">
-                            <dt>Live projects below</dt>
-                            <dd><span data-count="8">8</span></dd>
+                            <dt>Shipped projects</dt>
+                            <dd><span data-count="9">9</span></dd>
                         </div>
                         <div class="stat">
                             <dt>Founder since</dt>
@@ -330,7 +323,7 @@
                     </dl>
 
                     <div class="about__actions" data-reveal>
-                        <a href="cv.pdf" download class="btn btn--primary" data-magnetic>
+                        <a href="cv.pdf" download="Rayyan-Ahmed-CV.pdf" class="btn btn--primary" data-magnetic>
                             <span>Download CV</span>
                             <svg class="btn__icon"><use href="#i-download" /></svg>
                         </a>
@@ -345,95 +338,85 @@
             <div class="container">
                 <header class="section-head">
                     <p class="eyebrow" data-reveal><span class="eyebrow__num">02</span> Expertise</p>
-                    <h2 class="display" data-split>A toolkit spanning <span class="serif">pixels, servers</span> &amp; polygons.</h2>
+                    <h2 class="display" data-split>Full-stack web &amp; <span class="serif">game development.</span></h2>
                     <p class="section-head__sub" data-reveal>
-                        Nine disciplines, one mindset. Hover a panel to light it up.
+                        My two core disciplines, supported by mobile app development and 3D design.
                     </p>
                 </header>
 
                 <div class="bento">
-                    <article class="tile tile--frontend" data-reveal data-spotlight>
-                        <div class="tile__obj obj-cube" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                        <p class="tile__kicker">01 / Frontend Development</p>
-                        <h3 class="tile__title">Interfaces that feel alive</h3>
+                    <article class="tile tile--primary" data-reveal data-spotlight>
+                        <p class="tile__kicker"><span class="tile__badge">Core</span> 01 / Full-Stack Web Development</p>
+                        <h3 class="tile__title">Complete web products, from <span class="serif">interface to database</span></h3>
+                        <div class="tile__groups">
+                            <div>
+                                <h4>Frontend</h4>
+                                <ul class="chips"><li>Next.js</li><li>React.js</li><li>JavaScript</li><li>jQuery</li><li>Tailwind CSS</li><li>HTML &amp; CSS</li><li>Responsive UI/UX</li></ul>
+                            </div>
+                            <div>
+                                <h4>Backend</h4>
+                                <ul class="chips"><li>PHP</li><li>Laravel</li><li>Node.js</li><li>Express.js</li><li>REST APIs</li></ul>
+                            </div>
+                            <div>
+                                <h4>Data &amp; Deployment</h4>
+                                <ul class="chips"><li>MySQL</li><li>Database Design</li><li>Backend Architecture</li><li>Hostinger</li><li>Vercel</li><li>Netlify</li></ul>
+                            </div>
+                        </div>
+                        <a href="#projects" class="tile__link">See web projects <svg><use href="#i-arrow" /></svg></a>
+                    </article>
+
+                    <article class="tile tile--primary" data-reveal data-spotlight>
+                        <p class="tile__kicker"><span class="tile__badge">Core</span> 02 / Game Development</p>
+                        <h3 class="tile__title">3D games for Android, built in <span class="serif">Unity &amp; C#</span></h3>
+                        <div class="tile__groups">
+                            <div>
+                                <h4>Engine &amp; Platform</h4>
+                                <ul class="chips"><li>Unity 3D</li><li>C#</li><li>Android Game Development</li><li>3D Game Development</li></ul>
+                            </div>
+                            <div>
+                                <h4>Gameplay Systems</h4>
+                                <ul class="chips"><li>Gameplay Programming</li><li>Game Mechanics</li><li>Character Controllers</li><li>Physics Systems</li><li>AI &amp; NPC Behaviour</li></ul>
+                            </div>
+                            <div>
+                                <h4>Production</h4>
+                                <ul class="chips"><li>Level Design</li><li>Game Optimization</li></ul>
+                            </div>
+                        </div>
+                        <a href="#gamedev" class="tile__link">See my games <svg><use href="#i-arrow" /></svg></a>
+                    </article>
+
+                    <article class="tile tile--wide" data-reveal data-spotlight>
+                        <p class="tile__kicker">03 / Mobile App Development</p>
+                        <h3 class="tile__title">Cross-platform apps with <span class="serif">Flutter</span></h3>
                         <ul class="chips">
-                            <li>React.js</li><li>Next.js</li><li>JavaScript &amp; jQuery</li>
-                            <li>Tailwind CSS</li><li>Responsive UI/UX Design</li><li>HTML5 &amp; CSS3</li>
+                            <li>Flutter</li><li>Dart</li><li>Firebase</li><li>Cross-Platform Development</li><li>Android App Development</li>
+                            <li>Mobile UI Development</li><li>API Integration</li><li>Performance Optimization</li>
                         </ul>
                     </article>
 
-                    <article class="tile tile--backend" data-reveal data-spotlight>
-                        <div class="tile__obj obj-stack" aria-hidden="true"><i></i><i></i><i></i></div>
-                        <p class="tile__kicker">02 / Backend Development</p>
-                        <h3 class="tile__title">Reliable server logic</h3>
-                        <ul class="chips">
-                            <li>PHP &amp; Laravel</li><li>Node.js</li><li>Express.js</li><li>REST API Development</li>
-                        </ul>
-                    </article>
-
-                    <article class="tile tile--fullstack" data-reveal data-spotlight>
-                        <div class="tile__obj obj-gyro" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
-                        <p class="tile__kicker">03 / Full-Stack &amp; Web</p>
-                        <h3 class="tile__title">End-to-end products</h3>
-                        <ul class="chips">
-                            <li>E-commerce Platforms</li><li>AI Chatbot Interfaces</li><li>Laravel + MySQL Apps</li>
-                            <li>Next.js Web Apps</li><li>Flutter &amp; Firebase (mobile)</li>
-                        </ul>
-                    </article>
-
-                    <article class="tile tile--game tile--wide" data-reveal data-spotlight>
-                        <div class="tile__obj obj-octa" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                        <p class="tile__kicker">04 / Game Development &middot; Unity 3D</p>
-                        <h3 class="tile__title">Gameplay you can <span class="serif">feel</span></h3>
-                        <ul class="chips">
-                            <li>Unity 3D</li><li>C# Programming</li><li>Gameplay Programming</li><li>Game Mechanics</li>
-                            <li>Character Controllers</li><li>Physics Systems</li><li>AI &amp; NPC Behaviour</li>
-                            <li>Level Design</li><li>Game Optimization</li><li>Android Game Development</li>
-                        </ul>
-                        <a href="#gamedev" class="tile__link">Enter the game lab <svg><use href="#i-arrow" /></svg></a>
-                    </article>
-
-                    <article class="tile tile--blender tile--wide" data-reveal data-spotlight>
-                        <div class="tile__obj obj-sphere" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                        <p class="tile__kicker">05 / Blender &amp; 3D Modeling</p>
+                    <article class="tile tile--wide" data-reveal data-spotlight>
+                        <p class="tile__kicker">04 / Blender &amp; 3D Design</p>
                         <h3 class="tile__title">From vertex to <span class="serif">render</span></h3>
                         <ul class="chips">
-                            <li>Blender</li><li>3D Modeling</li><li>Character Modeling</li><li>Environment Design</li>
-                            <li>3D Asset Creation</li><li>Texturing</li><li>Materials &amp; Shading</li>
-                            <li>Lighting</li><li>Rendering</li><li>3D Animation</li>
+                            <li>Blender</li><li>3D Modeling</li><li>3D Asset Creation</li><li>Texturing</li>
+                            <li>Materials</li><li>Lighting</li><li>Rendering</li><li>3D Animation</li>
                         </ul>
                     </article>
 
-                    <article class="tile tile--langs tile--sm" data-reveal data-spotlight>
-                        <div class="tile__obj obj-glyph" aria-hidden="true">{ }</div>
-                        <p class="tile__kicker">06 / Programming Languages</p>
+                    <article class="tile tile--sm" data-reveal data-spotlight>
+                        <p class="tile__kicker">05 / Programming Languages</p>
                         <h3 class="tile__title">Fluent in</h3>
-                        <ul class="chips">
-                            <li>PHP</li><li>JavaScript</li><li>C#</li><li>Dart</li><li>SQL</li><li>HTML &amp; CSS</li>
-                        </ul>
+                        <ul class="chips"><li>PHP</li><li>JavaScript</li><li>C#</li><li>Dart</li><li>SQL</li><li>HTML &amp; CSS</li></ul>
                     </article>
 
-                    <article class="tile tile--db tile--sm" data-reveal data-spotlight>
-                        <div class="tile__obj obj-disks" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-                        <p class="tile__kicker">07 / Databases</p>
-                        <h3 class="tile__title">Data, well-structured</h3>
-                        <ul class="chips">
-                            <li>MySQL</li><li>Database Design</li><li>Backend Architecture</li><li>Firebase</li>
-                        </ul>
-                    </article>
-
-                    <article class="tile tile--tools tile--sm" data-reveal data-spotlight>
-                        <div class="tile__obj obj-hex" aria-hidden="true"><i></i><i></i><i></i></div>
-                        <p class="tile__kicker">08 / Development Tools</p>
+                    <article class="tile tile--sm" data-reveal data-spotlight>
+                        <p class="tile__kicker">06 / Development Tools</p>
                         <h3 class="tile__title">Shipping stack</h3>
-                        <ul class="chips">
-                            <li>Git &amp; GitHub</li><li>Unity Editor</li><li>Blender</li><li>Vercel</li><li>Netlify</li><li>Firebase</li>
-                        </ul>
+                        <ul class="chips"><li>Git &amp; GitHub</li><li>Unity Editor</li><li>Blender</li><li>Firebase</li></ul>
                     </article>
 
-                    <article class="tile tile--product tile--sm" data-reveal data-spotlight>
-                        <div class="tile__obj obj-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-                        <p class="tile__kicker">09 / Product &amp; Growth</p>
+                    <article class="tile tile--sm" data-reveal data-spotlight>
+                        <p class="tile__kicker">07 / Product &amp; Growth</p>
                         <h3 class="tile__title">Beyond the code</h3>
                         <ul class="chips">
                             <li>Product Strategy</li><li>Brand Development</li><li>Project Management</li>
@@ -511,13 +494,13 @@
                             <p class="work-card__cat">Web Project &middot; Research SaaS</p>
                             <h3 class="work-card__title">Statanex</h3>
                             <p class="work-card__desc">A platform that helps research teams run systematic literature reviews and meta-analyses &mdash; collaborate, screen articles, detect duplicates and track progress in one place.</p>
-                            <ul class="tech"><li>Next.js</li></ul>
+                            <ul class="tech"><li>Next.js</li><li>Laravel</li><li>MySQL</li><li>Hostinger</li></ul>
                             <a class="btn btn--line btn--sm" href="https://statanex.com/" target="_blank" rel="noopener noreferrer">Live Demo <svg class="btn__icon"><use href="#i-arrow" /></svg></a>
                         </div>
                     </li>
 
                     <li class="work-card">
-                        <a class="work-card__media" href="https://pansariinn.com/shop" target="_blank" rel="noopener noreferrer" data-cursor="Visit" aria-label="Open Pansari Inn live store">
+                        <a class="work-card__media" href="https://www.pansariinn.pk/shop" target="_blank" rel="noopener noreferrer" data-cursor="Visit" aria-label="Open Pansari Inn live store">
                             <img src="images/work/pansari-inn.jpg" alt="Pansari Inn herbal store product catalogue" width="1440" height="900" loading="lazy" decoding="async">
                         </a>
                         <div class="work-card__body">
@@ -525,7 +508,7 @@
                             <h3 class="work-card__title">Pansari Inn</h3>
                             <p class="work-card__desc">A herbal online store with a large catalogue &mdash; category filters, product search, ratings, quick-add to cart and order tracking.</p>
                             <ul class="tech"><li>Next.js</li></ul>
-                            <a class="btn btn--line btn--sm" href="https://pansariinn.com/shop" target="_blank" rel="noopener noreferrer">Live Demo <svg class="btn__icon"><use href="#i-arrow" /></svg></a>
+                            <a class="btn btn--line btn--sm" href="https://www.pansariinn.pk/shop" target="_blank" rel="noopener noreferrer">Live Demo <svg class="btn__icon"><use href="#i-arrow" /></svg></a>
                         </div>
                     </li>
 
@@ -612,13 +595,44 @@
             <div class="game__bg" aria-hidden="true"></div>
             <div class="container">
                 <header class="section-head section-head--game">
-                    <p class="eyebrow eyebrow--hud" data-reveal><span class="eyebrow__num">04</span> Game Lab &middot; Unity 3D &times; Blender</p>
+                    <p class="eyebrow eyebrow--hud" data-reveal><span class="eyebrow__num">04</span> Game Development &middot; Unity 3D</p>
                     <h2 class="display" data-split>I don't just build pages. <span class="serif">I build worlds.</span></h2>
                     <p class="section-head__sub" data-reveal>
-                        Gameplay systems in Unity &amp; C#, and the 3D assets that fill them, modelled, textured and lit in Blender.
-                        Try the systems yourself below.
+                        3D Android games built in Unity &amp; C#, with assets modelled, textured and lit in Blender. Download my game, or try a small demo right here.
                     </p>
                 </header>
+
+                <!-- Featured game: The Great Cheese Escape -->
+                <article class="feature feature--game" data-reveal>
+                    <div class="game-art">
+                        <img src="images/work/cheese-escape-icon.png" alt="The Great Cheese Escape app icon" width="192" height="192" class="game-art__icon">
+                        <dl class="specs">
+                            <div><dt>Platform</dt><dd>Android</dd></div>
+                            <div><dt>Category</dt><dd>3D Mobile Game</dd></div>
+                            <div><dt>Engine</dt><dd>Unity 6</dd></div>
+                            <div><dt>Download</dt><dd>APK &middot; 44 MB</dd></div>
+                        </dl>
+                    </div>
+                    <div class="feature__body">
+                        <p class="feature__cat">Featured Game &middot; Android</p>
+                        <h3 class="feature__title feature__title--sm">The Great Cheese Escape</h3>
+                        <p class="feature__desc">
+                            A 3D mobile game for Android that I built in Unity 6 with C#. It's set in a house
+                            environment, uses Unity's AI Navigation (NavMesh) system for character movement,
+                            touch input through the Input System, and the Universal Render Pipeline for
+                            mobile-friendly 3D graphics. It's compiled with IL2CPP for 64-bit Android phones.
+                        </p>
+                        <ul class="tech" aria-label="Technologies">
+                            <li>Unity 6</li><li>C#</li><li>URP</li><li>AI Navigation (NavMesh)</li><li>Input System</li><li>TextMeshPro</li><li>IL2CPP</li><li>Android ARM64</li>
+                        </ul>
+                        <div class="feature__actions">
+                            <a href="downloads/the-great-cheese-escape.apk" download="The-Great-Cheese-Escape.apk" class="btn btn--primary" data-magnetic>
+                                <span>Download APK</span><svg class="btn__icon btn__icon--lead"><use href="#i-download" /></svg>
+                            </a>
+                        </div>
+                        <p class="feature__note">For 64-bit Android phones. Android may ask you to allow installs from your browser first.</p>
+                    </div>
+                </article>
 
                 <!-- Playable demo -->
                 <div class="arena" data-reveal>
@@ -627,8 +641,8 @@
                         <span class="hud-value">Orb Runner</span>
                     </div>
                     <div class="arena__hud arena__hud--tr" aria-live="polite">
-                        <span class="hud-label">Orbs</span>
-                        <span class="hud-value"><span class="arena__score">0</span>/<span class="arena__total">8</span></span>
+                        <span class="hud-label">Orbs &middot; Lives</span>
+                        <span class="hud-value"><span class="arena__score">0</span>/<span class="arena__total">8</span> &middot; <span class="arena__lives">3</span></span>
                     </div>
                     <div class="arena__hud arena__hud--br" aria-hidden="true">
                         <span class="hud-label">Time</span>
@@ -636,26 +650,29 @@
                     </div>
 
                     <canvas class="arena__canvas" tabindex="0"
-                        aria-label="Playable 3D demo. Use W A S D or arrow keys to move, Space to jump, Escape to exit."></canvas>
+                        aria-label="Orb Runner game. Move with W A S D or the arrow keys, jump with Space, pause with Escape, restart with R."></canvas>
+
+                    <div class="arena__touch">
+                        <button type="button" class="arena__jump" aria-label="Jump">Jump</button>
+                    </div>
 
                     <div class="arena__overlay">
                         <div class="arena__panel">
-                            <p class="eyebrow eyebrow--hud">Interactive &middot; WebGL</p>
+                            <p class="eyebrow eyebrow--hud">Playable in your browser</p>
                             <p class="arena__title">Orb Runner</p>
-                            <p class="arena__msg">Collect every orb before the drone catches you. Don't fall off the island.</p>
-                            <button type="button" class="btn btn--primary arena__start" data-magnetic>
+                            <p class="arena__msg">Collect all 8 orbs. Avoid the drone (or jump over it) and don't fall off the island. You have 3 lives.</p>
+                            <button type="button" class="btn btn--primary arena__start">
                                 <svg class="btn__icon btn__icon--lead"><use href="#i-play" /></svg><span>Play demo</span>
                             </button>
                             <p class="arena__keys">
-                                <span class="keys-kb"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> / arrows to move &middot; <kbd>Space</kbd> jump &middot; <kbd>Esc</kbd> pause</span>
-                                <span class="keys-touch">Hold &amp; drag on the island to steer &middot; double-tap to jump.</span>
+                                <span class="keys-kb"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> / arrows to move &middot; <kbd>Space</kbd> jump &middot; <kbd>Esc</kbd> pause &middot; <kbd>R</kbd> restart</span>
+                                <span class="keys-touch">Touch and hold the island to run there &middot; tap Jump to jump.</span>
                             </p>
                         </div>
                     </div>
                     <p class="arena__caption">
-                        Built for this portfolio in Three.js: a character controller with acceleration &amp; jumping,
-                        gravity and fall/respawn physics, circle-collision obstacles, a steering-behaviour NPC drone and
-                        collectibles &mdash; the same systems I build in Unity, running live in your browser.
+                        Built in Three.js: a character controller with acceleration &amp; jumping, gravity and
+                        fall physics, collisions, a steering-behaviour NPC drone and collectibles.
                     </p>
                 </div>
 
@@ -753,13 +770,6 @@
                                 <p class="tl-item__role">Founder</p>
                                 <p class="tl-item__desc">Launched an online fashion e-brand for apparel and accessories. Managed branding,
                                     e-commerce, and product listing.</p>
-                            </li>
-                            <li class="tl-item" data-reveal>
-                                <p class="tl-item__time">2024 – 2025</p>
-                                <h4 class="tl-item__title">Ajmanistan (UAE)</h4>
-                                <p class="tl-item__role">Remote, Part-time Developer</p>
-                                <p class="tl-item__desc">Worked on marketing and web integration tasks for this UAE-based platform while
-                                    contributing remotely.</p>
                             </li>
                         </ol>
                     </div>
@@ -895,7 +905,7 @@
                             <li><a href="https://github.com/ceoraynuc" target="_blank" rel="noopener noreferrer"><svg><use href="#i-github" /></svg>GitHub</a></li>
                             <li><a href="https://www.instagram.com/developer.rayyan" target="_blank" rel="noopener noreferrer"><svg><use href="#i-instagram" /></svg>Instagram</a></li>
                             <li><a href="https://www.linkedin.com/in/ceoraynuc/" target="_blank" rel="noopener noreferrer"><svg><use href="#i-linkedin" /></svg>LinkedIn</a></li>
-                            <li><a href="https://www.threads.net/@itx__rayyan_ahmed" target="_blank" rel="noopener noreferrer"><svg><use href="#i-threads" /></svg>Threads</a></li>
+                            <li><a href="https://www.threads.com/@itx__rayyan_ahmed" target="_blank" rel="noopener noreferrer"><svg><use href="#i-threads" /></svg>Threads</a></li>
                         </ul>
                     </div>
                 </div>
@@ -964,7 +974,7 @@
                     <a href="https://github.com/ceoraynuc" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg><use href="#i-github" /></svg></a>
                     <a href="https://www.linkedin.com/in/ceoraynuc/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg><use href="#i-linkedin" /></svg></a>
                     <a href="https://www.instagram.com/developer.rayyan" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg><use href="#i-instagram" /></svg></a>
-                    <a href="https://www.threads.net/@itx__rayyan_ahmed" target="_blank" rel="noopener noreferrer" aria-label="Threads"><svg><use href="#i-threads" /></svg></a>
+                    <a href="https://www.threads.com/@itx__rayyan_ahmed" target="_blank" rel="noopener noreferrer" aria-label="Threads"><svg><use href="#i-threads" /></svg></a>
                 </div>
                 <a href="#top" class="to-top" aria-label="Back to top"><svg style="transform:rotate(180deg)"><use href="#i-down" /></svg></a>
             </div>
