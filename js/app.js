@@ -16,6 +16,12 @@ const GAME_SHOWCASE = [];
 const html = document.documentElement;
 html.classList.remove('no-js');
 
+// Always build the page from the top: restoring an old scroll position mid-load
+// makes ScrollTrigger measure the pinned project gallery in the wrong place.
+const initialHash = location.hash;
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
 const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 const isNarrow = () => window.innerWidth < 860;
@@ -29,6 +35,8 @@ const animate = !prefersReduced && hasGSAP();
 if (animate) {
     html.classList.add('anim');
     gsap.registerPlugin(ScrollTrigger);
+    // ScrollTrigger manages scroll restoration itself: keep it manual so a reload starts at the top
+    ScrollTrigger.clearScrollMemory('manual');
 }
 
 function webglAvailable() {
@@ -456,7 +464,9 @@ function setupScrollAnimations() {
         return () => { work.classList.remove('is-pinned'); gsap.set(track, { clearProps: 'transform' }); };
     });
 
-    window.addEventListener('load', () => ScrollTrigger.refresh());
+    const refresh = () => ScrollTrigger.refresh();
+    window.addEventListener('load', refresh);
+    if (document.fonts) document.fonts.ready.then(refresh);
 }
 
 /* ---------------- WebGL: hero ---------------- */
@@ -506,6 +516,20 @@ function setupGame() {
     });
 }
 
+/* ---------------- WebGL: expertise models (lazy) ---------------- */
+function setupExpertiseModels() {
+    const canvases = $$('.tile__model');
+    if (!canvases.length || !WEBGL) return;
+    const io = new IntersectionObserver(([en]) => {
+        if (!en.isIntersecting) return;
+        io.disconnect();
+        import('./expertise-models.js')
+            .then((m) => { if (!m.initExpertiseModels({ canvases, reducedMotion: prefersReduced })) html.classList.add('no-webgl'); })
+            .catch((err) => { console.warn('Expertise models unavailable', err); canvases.forEach((c) => (c.style.display = 'none')); });
+    }, { rootMargin: '600px 0px' });
+    io.observe($('.bento'));
+}
+
 /* ---------------- Preloader + intro ---------------- */
 function intro() {
     const pre = $('.preloader');
@@ -514,6 +538,9 @@ function intro() {
     const done = () => {
         html.classList.add('is-loaded');
         hero && hero.playIntro();
+        // re-measure now that fonts, images and the intro are settled, then honour #section links
+        if (window.ScrollTrigger) ScrollTrigger.refresh();
+        if (initialHash && initialHash.length > 1 && document.querySelector(initialHash)) setTimeout(() => scrollToTarget(initialHash), 150);
     };
 
     if (!animate) {
@@ -552,3 +579,4 @@ setupScrollAnimations();
 // Wait for the 3D hero (max 2.5s) so the reveal and the laptop intro play together.
 Promise.race([setupHero(), new Promise((r) => setTimeout(r, 2500))]).finally(intro);
 setupGame();
+setupExpertiseModels();

@@ -17,7 +17,8 @@ npx serve .
 | `index.html` | All content: hero, about, skills, projects, game lab, experience, testimonials, contact, footer |
 | `css/main.css` | Design system (tokens at the top), layout, responsive rules, reduced-motion rules |
 | `js/app.js` | Preloader, Lenis smooth scroll, navigation, cursor, magnetic buttons, GSAP scroll animations, project gallery, testimonials, contact form, lazy-loading the 3D modules |
-| `js/hero-scene.js` | Three.js hero: a procedural laptop whose lid opens, with a live-typing C# editor on its screen and objects orbiting it |
+| `js/hero-scene.js` | Three.js hero: a procedural aluminium laptop (the only 3D element in the hero) whose lid opens, with a live-typing C# editor on its screen; drag to rotate |
+| `js/expertise-models.js` | The 3D model in each Expertise tile (browser + database, controller, phone, mesh, `</>`, Git graph, chart), all drawn by one shared WebGL renderer |
 | `js/game-demo.js` | "Orb Runner", the playable Three.js demo in the Game Lab (character controller, physics, NPC drone AI, collectibles) |
 | `images/work/` | Optimised project screenshots and the portrait |
 
@@ -35,6 +36,10 @@ The old template files (`css/styles.css`, `css/vendor.css`, `js/main.js`, `js/pl
 - **Game screenshots / gameplay video:** add them to `GAME_SHOWCASE` at the top of `js/app.js`.
 - **CV:** `cv.pdf` is generated from `cv/cv.html`. Edit the HTML, then print it to PDF in Edge or Chrome (A4, no headers/footers, background graphics on).
 - **Favicon:** the "R" icon set is `favicon.svg`, `favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png`, `apple-touch-icon.png` and `android-chrome-*.png`. The `?v=3` in the links forces browsers to load the new icon.
+
+## Screen sizes
+
+Sizes are in rem. On screens 1800px and wider the root font size steps up (up to 212.5% at 3700px+), so on 1440p and 4K displays the whole layout grows in proportion instead of sitting small in the middle.
 
 ## Performance and accessibility
 
